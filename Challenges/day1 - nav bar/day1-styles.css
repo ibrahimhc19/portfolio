@@ -41,3 +41,10 @@ a.active, a:hover{
   background: rgb(131, 78, 254);
   transition: .5s;
 }
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 100px;
+  margin-right: 40px;
+}
