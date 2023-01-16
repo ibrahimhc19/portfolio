@@ -21,7 +21,7 @@ label.title{
 nav ul{
   float: right;
   margin-right: 0px;
-  padding: 0 200px;
+  padding: 0 180px;
 }
 nav ul li{
   display: inline-block;
@@ -35,7 +35,7 @@ nav ul li a{
   border-radius: 3px;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 7px;
+  padding: 7px 13px;
 }
 a.active, a:hover{
   background: rgb(131, 78, 254);
