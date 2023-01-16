@@ -47,4 +47,9 @@ a.active, a:hover{
   float: right;
   line-height: 100px;
   margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
 }
