@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+nav{
+  background: rgb(89, 25, 240);
+  height: 100px;
+  width: 100%;
+}
+label.title{
+  color: rgb(209, 223, 255);
+  font-size: 35px;
+  line-height: 100px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 100px;
+  align-items: center;
+  margin: 0 5px;
+}
+
+
+
+
+
+
+
+
+
+
+a{
+  color: white;
+}
