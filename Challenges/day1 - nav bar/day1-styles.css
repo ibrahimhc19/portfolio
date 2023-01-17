@@ -9,7 +9,8 @@
 body{
   background: url(Images/fondo.png) no-repeat;
   background-size: cover;
-  height: calc(100vh - 80px);
+  height: 100vh;
+  justify-content: center;
 }
 nav{
   background: rgb(89, 25, 240);
@@ -66,10 +67,9 @@ a.active, a:hover{
 #check{
   display: none;
 }
-@media (min-width:859), ((max-width: 1200px)){
+@media (min-width: 375px) and (max-width: 858px){
   label.title{
-    font-size: 30px;
-    padding-left: 50px;
+    padding: 0 50px;
   }
   nav ul{
     padding: 0 8px;
