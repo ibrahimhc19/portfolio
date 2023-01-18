@@ -160,7 +160,7 @@ a:hover {
     color: #b6a8ff;
   }
   #check:checked ~ ul {
-    right: 0;
+    right: 0%;
   }
 }
 /* Small View  */
