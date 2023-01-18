@@ -9,9 +9,10 @@
 }
 /* Setting the body background */
 body {
-  background: url(mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg) no-repeat;
+  background: blueviolet;
+  /* background: url(mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg) no-repeat;
   background-size: cover;
-  height: calc(100vh);
+  height: calc(100vh); */
 }
 /* Styling the navigation bar */
 nav {
