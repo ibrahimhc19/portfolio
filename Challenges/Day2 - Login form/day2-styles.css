@@ -1,19 +1,17 @@
 * {
   margin: 0;
   padding: 0;
-  list-style: none;
-  text-decoration: none;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url(Images/fondo.png) no-repeat;
-  background-size: cover;
-  height: calc(100vh);
   width: 100%;
+  display: flex;
+  height: 100vh;
+  background: url(Images/fondo.png) no-repeat;
+  align-items: center;
+  background-size: cover;
+  justify-content: center;
 }
 .form-container {
   display: flex;
@@ -31,4 +29,41 @@ body {
   background: rgba(255, 255, 255, 0.08);
   padding: 5em 2rem;
   margin: auto;
+}
+.form-title{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: rgb(180, 255, 255);
+  font-weight: bold;
+}
+.username, .userpassword{
+  margin: 1rem;
+  border-radius: 3rem;
+  padding: 1rem 2rem;
+  border: solid 1px rgb(0, 238, 255);
+  width: 15rem;
+  font-size: 1.2rem;
+  outline: none;
+  transition: all .2s ease-in-out;
+  text-align: center;
+  background: rgb(173, 229, 255);
+}
+.username:focus, .userpassword:focus{
+  width: 20rem;
+}
+.login{
+  border-radius: 6rem;
+  padding: 1rem 2rem;
+  border: solid 1px rgb(0, 238, 255);
+  text-decoration: underline;
+  font-size: 1.2rem;
+  color: rgb(180, 255, 255);
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  background: rgb(0, 119, 255);
+  font-weight: bold;
+}
+.login:hover{
+  background: green;
+  border: 2px solid green;
 }
