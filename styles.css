@@ -9,11 +9,10 @@
 }
 /* Setting the body background */
 body {
-  background: blueviolet;
-  /* background: url(mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg) no-repeat;
+  background: url(mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg) no-repeat;
   background-size: cover;
-  height: calc(100vh); */
 }
+
 /* Styling the navigation bar */
 nav {
   width: 100%;
@@ -26,7 +25,7 @@ nav {
 
 /* Label */
 label.title {
-  font-size: 35px;
+  font-size: 40px;
   padding: 0 200px;
   font-weight: bold;
   line-height: 80px;
@@ -111,12 +110,21 @@ a:hover {
 }
 /* MEDIA QUERIES  */
 
-/* Desktop View  */
-/* @media (min-width: 859), (max-width: 1170px) { */
-
+@media (min-width: 859px) and (max-width: 1170px){
+  label.title{
+    font-size: 30px;
+    padding: 0 100px;
+  }
+  nav ul{
+    padding: 0 20px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
 /* Tablet View  */
-@media (max-width: 858px) {
-  label.title {
+@media (min-width: 465px) and (max-width: 858px) {
+  label.title{
     padding: 0 100px;
   }
   .checkbtn {
@@ -141,7 +149,7 @@ a:hover {
     margin: 50px 0;
     display: block;
     line-height: 30px;
-    padding: 30px 20px;
+    /* padding: 30px 20px; */
   }
   nav ul li a {
     font-size: 20px;
@@ -156,5 +164,11 @@ a:hover {
   }
   #check{
     display: none;
+  }
+}
+/* Small screen View  */
+@media (max-width: 464px){
+  label.title{
+    padding: 0 50px;
   }
 }
