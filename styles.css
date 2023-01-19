@@ -10,8 +10,9 @@
 /* Setting the body background */
 body {
   background-color: blueviolet;
-  /* background: url(background-img.jpg) no-repeat; */
-  /* background-size: cover; */
+  background: url(background-img.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   height: calc(100vh);
 }
 
@@ -113,6 +114,9 @@ a:hover {
 /* MEDIA QUERIES  */
 
 @media (min-width: 859px) and (max-width: 1170px){
+  body{
+    overflow-x: hidden;
+  }
   label.title{
     font-size: 30px;
     padding: 0 100px;
@@ -127,7 +131,7 @@ a:hover {
 /* Tablet View  */
 @media (min-width: 465px) and (max-width: 858px) {
   body{
-    overflow: hidden;
+    overflow-x: hidden;
   }
   label.title{
     padding: 0 100px;
@@ -172,8 +176,8 @@ a:hover {
   }
 }
 /* Small screen View  */
-/* @media (max-width: 464px){
+@media (max-width: 464px){
   label.title{
     padding: 0 50px;
   }
-} */
+}
