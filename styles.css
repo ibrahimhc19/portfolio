@@ -13,7 +13,7 @@ body {
   background: url(background-img.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: calc(100vh);
+  height: 100%;
 }
 
 /* Styling the navigation bar */
@@ -118,14 +118,15 @@ a:hover {
     overflow-x: hidden;
   }
   label.title{
-    font-size: 30px;
     padding: 0 100px;
+    font-size: 30px;
   }
   nav ul{
-    padding: 0 20px;
+    padding: 0 8px;
   }
   nav ul li a{
     font-size: 16px;
+    padding: 7px 0px;
   }
 }
 /* Tablet View  */
@@ -139,7 +140,7 @@ a:hover {
   .checkbtn {
     display: block;
   }
-  .list {
+  ul {
     position: fixed;
     top: 80px;
     width: 100%;
@@ -151,14 +152,14 @@ a:hover {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2.4px);
     background: rgba(140, 0, 255, 0.08);
-    flex-direction: column;
-    display: flex;
+    /* flex-direction: column; */
+    /* display: flex; */
   }
   nav ul li {
     margin: 50px 0;
     display: block;
     line-height: 30px;
-    /* padding: 30px 20px; */
+    padding: 30px 20px;
   }
   nav ul li a {
     font-size: 20px;
@@ -169,7 +170,7 @@ a:hover {
     color: #b6a8ff;
   }
   #check:checked ~ ul {
-    right: 0%;
+    right: 0;
   }
   #check{
     display: none;
