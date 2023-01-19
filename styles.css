@@ -10,7 +10,7 @@
 /* Setting the body background */
 body {
   background: url(background-img.jpg) no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
 }
 
 /* Styling the navigation bar */
