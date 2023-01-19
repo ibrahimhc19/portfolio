@@ -10,8 +10,8 @@
 /* Setting the body background */
 body {
   background-color: blueviolet;
-  background: url(background-img.jpg) no-repeat;
-  background-size: cover;
+  /* background: url(background-img.jpg) no-repeat; */
+  /* background-size: cover; */
   height: calc(100vh);
 }
 
