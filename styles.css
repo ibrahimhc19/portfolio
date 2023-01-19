@@ -9,8 +9,10 @@
 }
 /* Setting the body background */
 body {
+  background-color: blueviolet;
   background: url(background-img.jpg) no-repeat;
-  /* background-size: cover; */
+  background-size: cover;
+  height: calc(100vh);
 }
 
 /* Styling the navigation bar */
@@ -124,6 +126,9 @@ a:hover {
 }
 /* Tablet View  */
 @media (min-width: 465px) and (max-width: 858px) {
+  body{
+    overflow: hidden;
+  }
   label.title{
     padding: 0 100px;
   }
@@ -167,8 +172,8 @@ a:hover {
   }
 }
 /* Small screen View  */
-@media (max-width: 464px){
+/* @media (max-width: 464px){
   label.title{
     padding: 0 50px;
   }
-}
+} */
