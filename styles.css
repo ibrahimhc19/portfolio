@@ -11,7 +11,7 @@
   body {
     background: blueviolet;
     background: url(background-img.jpg) no-repeat; */
-    background-size: cover;
+    /* background-size: cover; */
     height: calc(100vh);
   }
   /* Styling the navigation bar */
