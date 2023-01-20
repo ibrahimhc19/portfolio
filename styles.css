@@ -118,11 +118,11 @@
     position: fixed;
     top: 5rem;
     left: 100%;
-    /* align-items: center; */
+    align-items: center;
     transition: all 0.5s;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2.4px);
-    /* justify-content: space-around; */
+    justify-content: space-around;
   }
 
   #check {
