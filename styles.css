@@ -8,11 +8,11 @@
   font-family: "Poppins", sans-serif;
 }
 /* Setting the background */
-html{
-  background-image: url(background-img.jpg);
-}
+
 body {
   background: rgb(2,0,36);
+  background: url(background-img.jpg) no-repeat;
+  background-size: auto;
 }
 /* Styling the navigation bar */
 
