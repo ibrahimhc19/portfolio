@@ -8,11 +8,6 @@
   font-family: "Poppins", sans-serif;
 }
 /* Setting the body background */
-body {
-  background: blueviolet;
-  background-image: url(background-img.jpg);
-}
-
 /* Styling the navigation bar */
 
 .nav-bar {
