@@ -8,9 +8,6 @@
   font-family: "Poppins", sans-serif;
 }
 /* Setting the background */
-html{
-  min-height: 100%;
-}
 body {
   background: rgb(2,0,36);
   background: linear-gradient(rgba(2,0,36,1) 0%, rgba(67,0,154,1) 35%, rgba(145,0,255,1) 100%);
