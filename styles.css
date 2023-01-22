@@ -7,7 +7,9 @@
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
-
+h1,h2,h3,h4,h5,h6,p{
+  color: white;
+}
 /* Setting the background */
 html{
   /* background: rgb(2,0,36); */
@@ -18,7 +20,7 @@ html{
 
 .nav-bar {
   width: 100%;
-  height: 3rem;
+  height: 4rem;
   letter-spacing: 3px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   background: rgba(2,0,10,1) ;
@@ -66,24 +68,6 @@ html{
 }
 #check {
   display: none;
-}
-
-.big-container{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  flex-direction: column;
-}
-.element{
-  background: rgba(201, 197, 255, 0.26);
-  width: 70%;
-  height: 10rem;
-  margin: 2rem auto;
-  border-radius: 1rem;
-}
-.element h1{
-  color: #33c5ff;
 }
 
 /* STARTING WITH THE FORM CONTAINER  */
@@ -146,23 +130,20 @@ html{
     outline: none;
   }
   .list {
-    width: 100%;
+    width: 90%;
     height: 100vh;
     background: rgba(2,0,10,1) ;
     text-align: center;
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 3rem;
+    top: 4rem;
     left: 100%;
     align-items: center;
     transition: all 0.5s;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2.4px);
-    justify-content: space-around;
-  }
-  .menu ul li a {
-    border: #33c5ff 1px;
+    /* justify-content: space-around; */
   }
 
   #check {
@@ -174,6 +155,6 @@ html{
   }
 
   #check:checked ~ ul {
-    left: 0%;
+    left: 12%;
   }
 }
