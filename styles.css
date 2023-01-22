@@ -5,30 +5,31 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 h1,h2,h3,h4,h5,h6,p{
   color: white;
 }
 /* Setting the background */
 html{
+  height: 100%;
   background: linear-gradient(315deg, #00d2ff 0%, #3a47d5 100%);
 }
 /* Styling the navigation bar */
 
 .nav-bar {
+  top: 0;
   width: 100%;
   height: 4rem;
-  letter-spacing: 3px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(315deg, #00d0ff5e 0%, #3a47d5 100%);
-  line-height: 4rem;
-  font-weight: bold;
-  justify-content: space-around;
-  align-items: center;
   display: flex;
   position: fixed;
-  top: 0;
+  font-weight: bold;
+  line-height: 4rem;
+  letter-spacing: 3px;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(315deg, #00d0ff5e 0%, #3a47d5 100%);
 }
 .boton{
   display: none;
@@ -66,8 +67,8 @@ html{
   float: right;
   display: none;
   color: white;
-  font-size: 1.8rem;
   cursor: pointer;
+  font-size: 1.8rem;
 }
 #check {
   display: none;
@@ -78,18 +79,18 @@ html{
 @media screen and (max-width: 805px) {
 
   .list {
-    width: 90%;
-    height: 100vh;
-    background: linear-gradient(315deg,#00d2ff 0%, #3a47d5 100%);    text-align: center;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
     top: 4rem;
     left: 100%;
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    position: fixed;
     align-items: center;
     transition: all 0.5s;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
     backdrop-filter: blur(2.4px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(315deg,#00d2ff 0%, #3a47d5 100%);    text-align: center;
     /* justify-content: space-around; */
   }
   .list li{
@@ -98,8 +99,8 @@ html{
   .boton{
     display: block;
     margin-top: 4rem;
-    padding: 1rem 3rem;
     background: none;
+    padding: 1rem 3rem;
     border: #00d2ff solid;
   }
 
