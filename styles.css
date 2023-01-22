@@ -10,23 +10,19 @@
 
 /* Setting the background */
 html{
-  background: rgb(2,0,36);
-  background: linear-gradient( rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  /* background: rgb(2,0,36); */
   height: 100%;
+  background: linear-gradient( rgba(2,0,10,1) 0%, rgb(2, 0, 50) 35%);
 }
-/* body {
-  background: rgb(2,0,36);
-} */
 /* Styling the navigation bar */
 
 .nav-bar {
   width: 100%;
-  height: 5rem;
+  height: 3rem;
   letter-spacing: 3px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  /* backdrop-filter: blur(2.4px); */
-  background: #020024;
-  line-height: 5rem;
+  background: rgba(2,0,10,1) ;
+  line-height: 3rem;
   font-weight: bold;
   justify-content: space-around;
   align-items: center;
@@ -36,7 +32,7 @@ html{
 
 /* Label */
 .title label {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: rgb(209, 223, 255);
 }
 /* List  */
@@ -72,6 +68,24 @@ html{
   display: none;
 }
 
+.big-container{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+.element{
+  background: rgba(201, 197, 255, 0.26);
+  width: 70%;
+  height: 10rem;
+  margin: 2rem auto;
+  border-radius: 1rem;
+}
+.element h1{
+  color: #33c5ff;
+}
+
 /* STARTING WITH THE FORM CONTAINER  */
 
 .container {
@@ -86,7 +100,7 @@ html{
   margin: 12rem auto;
   color: white;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2.4px);
+  /* backdrop-filter: blur(2.4px); */
   background: rgba(255, 255, 255, 0.08);
   border-radius: 2em;
 }
@@ -105,27 +119,50 @@ html{
   padding: 0.5em 2em;
   border-radius: 2em;
   outline: none;
+  background: #33c5ff;
 }
 /* MEDIA QUERIES  */
 
 @media screen and (max-width: 805px) {
-  /* .container{
-    width: 100%;
-  } */
+  .container{
+    width: 80%;
+    height: auto;
+    padding: 1em;
+  }
+  .hello {
+    font-size: 1em;
+  }
+  .iDev {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .tools {
+    font-size: .8em;
+  }
+  .emailMe {
+    margin-top: 1em;
+    padding: 0.5em 2em;
+    border-radius: 1em;
+    outline: none;
+  }
   .list {
     width: 100%;
     height: 100vh;
-    background: #020024;
+    background: rgba(2,0,10,1) ;
     text-align: center;
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 5rem;
+    top: 3rem;
     left: 100%;
     align-items: center;
     transition: all 0.5s;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2.4px);
+    justify-content: space-around;
+  }
+  .menu ul li a {
+    border: #33c5ff 1px;
   }
 
   #check {
