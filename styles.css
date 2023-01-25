@@ -5,15 +5,19 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Inconsolata', monospace;
 }
 h1,h2,h3,h4,h5,h6,p{
-  color: white;
+  color: #FFEECF;
 }
 /* Setting the background */
 html{
   height: 100%;
-  background: linear-gradient(315deg, #00d2ff 0%, #3a47d5 100%);
+  /* background: linear-gradient(315deg, #00d2ff 0%, #3a47d5 100%); */
+  /* background: linear-gradient(315deg, rgb(22, 7, 36) 0%, #00d2ff 100%); */
+  /* background: #00d2ff; */
+  background: #FF2C55;
+  background: linear-gradient(315deg, #00d2ff 0%, #80ffdb 100%);
 }
 /* Styling the navigation bar */
 
@@ -29,7 +33,7 @@ html{
   align-items: center;
   justify-content: space-around;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(315deg, #00d0ff5e 0%, #3a47d5 100%);
+  /* background: linear-gradient(315deg, #00d0ff5e 0%, #3a47d5 100%); */
 }
 .boton{
   display: none;
@@ -39,7 +43,7 @@ html{
 /* Label */
 .title label {
   font-size: 2rem;
-  color: rgb(209, 223, 255);
+  color: #FFEECF;
 }
 /* List  */
 .menu ul {
@@ -66,8 +70,8 @@ html{
 .checkbtn {
   float: right;
   display: none;
-  color: white;
   cursor: pointer;
+  color: #FFEECF;
   font-size: 1.8rem;
 }
 #check {
