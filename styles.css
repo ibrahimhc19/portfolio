@@ -8,8 +8,8 @@
   font-family: 'Inconsolata', monospace;
 }
 :root{
-  --text: #fdf7ec;
-  --gradient: linear-gradient(315deg, #00d2ff 0%, #80ffdb 100%);
+  --text: #ecfcfd;
+  --gradient: linear-gradient(135deg, #00d2ff 0%, #80ffdb 100%);
 
 }
 h1,h2,h3,h4,h5,h6,p{
@@ -82,7 +82,35 @@ html{
 #check {
   display: none;
 }
-
+.greetingBox{
+  width: 75%; 
+  margin: 10rem auto 1rem;
+  border-bottom: var(--text) solid 2px;
+  padding-bottom: 2rem;
+}
+.hello{
+  font-size: .9rem;
+}
+.name{
+  font-size: 2rem; 
+  margin-bottom: .2rem;
+}
+.whatIdo{
+  font-size: 1.7rem;
+}
+.paragraph{
+  font-size: .95rem; 
+  font-weight: bold; 
+  margin-top: .2rem;
+}
+.knowMeBtn{
+  padding: 1rem 1rem; 
+  color: var(--text); 
+  background: none; 
+  outline: none; 
+  border: 2px solid var(--text); 
+  font-weight: bold;
+}
 /* MEDIA QUERIES  */
 
 @media screen and (max-width: 805px) {
