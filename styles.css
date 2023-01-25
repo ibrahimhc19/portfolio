@@ -8,7 +8,9 @@
   font-family: 'Inconsolata', monospace;
 }
 :root{
-  --text: #fdf7ec
+  --text: #fdf7ec;
+  --gradient: linear-gradient(315deg, #00d2ff 0%, #80ffdb 100%);
+
 }
 h1,h2,h3,h4,h5,h6,p{
   color: var(--text);
@@ -20,7 +22,7 @@ html{
   /* background: linear-gradient(315deg, rgb(22, 7, 36) 0%, #00d2ff 100%); */
   /* background: #00d2ff; */
   background: #FF2C55;
-  background: linear-gradient(315deg, #00d2ff 0%, #80ffdb 100%);
+  background: var(--gradient)
 }
 /* Styling the navigation bar */
 
@@ -62,12 +64,12 @@ html{
   margin: 0 8px;
   border-radius: 3px;
   text-transform: uppercase;
-  color: rgb(209, 223, 255);
+  color: var(--text);
   transition: all 1s;
 }
 /* Links behavior */
 .menu ul li a:hover {
-  background: #33c5ff;
+  background: #33ffe4;
 }
 /* Check Button */
 .checkbtn {
@@ -92,12 +94,13 @@ html{
     height: 100vh;
     display: flex;
     position: fixed;
+    text-align: center;
     align-items: center;
     transition: all 0.5s;
     flex-direction: column;
     backdrop-filter: blur(2.4px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(315deg,#00d2ff 0%, #3a47d5 100%);    text-align: center;
+    background: var(--gradient);
     /* justify-content: space-around; */
   }
   .list li{
@@ -108,7 +111,8 @@ html{
     margin-top: 4rem;
     background: none;
     padding: 1rem 3rem;
-    border: #00d2ff solid;
+    border: var(--text) solid;
+    color: var(--text);
   }
 
   #check {
