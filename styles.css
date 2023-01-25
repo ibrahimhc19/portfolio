@@ -7,8 +7,11 @@
   text-decoration: none;
   font-family: 'Inconsolata', monospace;
 }
+:root{
+  --text: #fdf7ec
+}
 h1,h2,h3,h4,h5,h6,p{
-  color: #FFEECF;
+  color: var(--text);
 }
 /* Setting the background */
 html{
@@ -43,7 +46,7 @@ html{
 /* Label */
 .title label {
   font-size: 2rem;
-  color: #FFEECF;
+  color: var(--text);
 }
 /* List  */
 .menu ul {
@@ -71,7 +74,7 @@ html{
   float: right;
   display: none;
   cursor: pointer;
-  color: #FFEECF;
+  color: var(--text);
   font-size: 1.8rem;
 }
 #check {
