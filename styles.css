@@ -10,6 +10,7 @@
 :root{
   --text: #ecfcfd;
   --gradient: linear-gradient(135deg, #00d2ff 0%, #80ffdb 100%);
+  --rounded: .7rem
 
 }
 h1,h2,h3,h4,h5,h6,p{
@@ -29,12 +30,12 @@ html{
 .nav-bar {
   top: 0;
   width: 100%;
-  height: 4rem;
+  height: 5.5rem;
   display: flex;
   position: fixed;
   font-weight: bold;
-  line-height: 4rem;
-  letter-spacing: 3px;
+  line-height: 5.5rem;
+  letter-spacing: 2px;
   align-items: center;
   justify-content: space-around;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -63,9 +64,10 @@ html{
   padding: 7px 13px;
   margin: 0 8px;
   border-radius: 3px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: var(--text);
   transition: all 1s;
+  letter-spacing:2px;
 }
 /* Links behavior */
 .menu ul li a:hover {
@@ -89,19 +91,23 @@ html{
   padding-bottom: 2rem;
 }
 .hello{
-  font-size: .9rem;
+  font-size: 1.1rem;
+  margin-bottom: .1rem;
+  letter-spacing: 2px;
 }
 .name{
-  font-size: 2rem; 
-  margin-bottom: .2rem;
+  font-size: 3rem; 
+  margin-bottom: .1rem;
+  letter-spacing: 2px;
 }
 .whatIdo{
   font-size: 1.7rem;
+  margin-bottom: 0.5rem;
 }
 .paragraph{
-  font-size: .95rem; 
-  font-weight: bold; 
-  margin-top: .2rem;
+  font-size: 1.3rem; 
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 .knowMeBtn{
   padding: 1rem 1rem; 
@@ -110,13 +116,15 @@ html{
   outline: none; 
   border: 2px solid var(--text); 
   font-weight: bold;
+  border-radius: var(--rounded);
 }
+
 /* MEDIA QUERIES  */
 
 @media screen and (max-width: 805px) {
 
   .list {
-    top: 4rem;
+    top: 5.5rem;
     left: 100%;
     width: 90%;
     height: 100vh;
@@ -132,15 +140,19 @@ html{
     /* justify-content: space-around; */
   }
   .list li{
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   .boton{
     display: block;
-    margin-top: 4rem;
+    margin-top: 2rem;
     background: none;
-    padding: 1rem 3rem;
+    padding: 1rem 1rem;
     border: var(--text) solid;
     color: var(--text);
+    border-radius: var(--rounded);
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    font-weight: bold;
   }
 
   #check {
