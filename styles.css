@@ -116,6 +116,7 @@ html{
   padding: 1rem 1rem; 
   border: 2px solid var(--text); 
   font-weight: bold;
+  border-radius: var(--rounded);
 }
 
 /* MEDIA QUERIES  */
@@ -148,6 +149,7 @@ html{
     padding: 1rem 3rem;
     border: var(--text) solid;
     color: var(--text);
+    border-radius: var(--rounded);
   }
 
   #check {
