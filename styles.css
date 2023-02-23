@@ -2,9 +2,9 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  box-sizing: border-box;
   font-family: 'Inconsolata', monospace;
 }
 :root{
@@ -22,7 +22,7 @@ html{
   /* background: linear-gradient(315deg, #00d2ff 0%, #3a47d5 100%); */
   /* background: linear-gradient(315deg, rgb(22, 7, 36) 0%, #00d2ff 100%); */
   /* background: #00d2ff; */
-  background: #FF2C55;
+  /* background: #FF2C55; */
   background: var(--gradient)
 }
 /* Styling the navigation bar */
@@ -33,13 +33,13 @@ html{
   height: 5.5rem;
   display: flex;
   position: fixed;
+  background: none;
   font-weight: bold;
   line-height: 5.5rem;
   letter-spacing: 2px;
   align-items: center;
   justify-content: space-around;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  /* background: linear-gradient(315deg, #00d0ff5e 0%, #3a47d5 100%); */
 }
 .boton{
   display: none;
@@ -59,15 +59,14 @@ html{
 
 /* Links */
 .menu ul li a {
+  margin: 0 8px;
   cursor: pointer;
   font-size: 1.2rem;
   padding: 7px 13px;
-  margin: 0 8px;
   border-radius: 3px;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   color: var(--text);
   transition: all 1s;
-  letter-spacing:2px;
 }
 /* Links behavior */
 .menu ul li a:hover {
@@ -78,17 +77,17 @@ html{
   float: right;
   display: none;
   cursor: pointer;
-  color: var(--text);
   font-size: 1.8rem;
+  color: var(--text);
 }
 #check {
   display: none;
 }
 .greetingBox{
   width: 75%; 
+  padding-bottom: 2rem;
   margin: 10rem auto 1rem;
   border-bottom: var(--text) solid 2px;
-  padding-bottom: 2rem;
 }
 .hello{
   font-size: 1.1rem;
@@ -110,13 +109,13 @@ html{
   margin-bottom: 0.5rem;
 }
 .knowMeBtn{
-  padding: 1rem 1rem; 
-  color: var(--text); 
-  background: none; 
   outline: none; 
+  background: none; 
+  font-weight: bold;
+  color: var(--text); 
+  padding: 1rem 1rem; 
   border: 2px solid var(--text); 
   font-weight: bold;
-  border-radius: var(--rounded);
 }
 
 /* MEDIA QUERIES  */
@@ -134,9 +133,9 @@ html{
     align-items: center;
     transition: all 0.5s;
     flex-direction: column;
+    background: var(--gradient);
     backdrop-filter: blur(2.4px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    background: var(--gradient);
     /* justify-content: space-around; */
   }
   .list li{
@@ -146,13 +145,9 @@ html{
     display: block;
     margin-top: 2rem;
     background: none;
-    padding: 1rem 1rem;
+    padding: 1rem 3rem;
     border: var(--text) solid;
     color: var(--text);
-    border-radius: var(--rounded);
-    letter-spacing: 2px;
-    font-size: 1.2rem;
-    font-weight: bold;
   }
 
   #check {
