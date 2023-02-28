@@ -19,11 +19,8 @@ h1,h2,h3,h4,h5,h6,p{
 /* Setting the background */
 html{
   /* height: 100%; */
-  /* background: linear-gradient(315deg, #00d2ff 0%, #3a47d5 100%); */
-  /* background: linear-gradient(315deg, rgb(22, 7, 36) 0%, #00d2ff 100%); */
-  /* background: #00d2ff; */
-  /* background: #FF2C55; */
-  background: var(--gradient)
+  background: #21c0b3;
+  /* background: var(--gradient) */
 }
 /* Styling the navigation bar */
 
@@ -33,11 +30,11 @@ html{
   height: 5.5rem;
   display: flex;
   position: fixed;
-  background: none;
   font-weight: bold;
   line-height: 5.5rem;
   letter-spacing: 2px;
   align-items: center;
+  background: #21c0b3;
   justify-content: space-around;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
@@ -64,9 +61,9 @@ html{
   font-size: 1.2rem;
   padding: 7px 13px;
   border-radius: 3px;
-  text-transform: uppercase;
   color: var(--text);
   transition: all 1s;
+  text-transform: uppercase;
 }
 /* Links behavior */
 .menu ul li a:hover {
@@ -84,20 +81,20 @@ html{
   display: none;
 }
 .greetingBox{
-  width: 75%; 
+  width: 75%;
   padding-bottom: 2rem;
   margin: 10rem auto 1rem;
   border-bottom: var(--text) solid 2px;
 }
 .hello{
   font-size: 1.1rem;
-  margin-bottom: .1rem;
   letter-spacing: 2px;
+  margin-bottom: .1rem;
 }
 .name{
   font-size: 3rem; 
-  margin-bottom: .1rem;
   letter-spacing: 2px;
+  margin-bottom: .1rem;
 }
 .whatIdo{
   font-size: 1.7rem;
@@ -115,18 +112,55 @@ html{
   color: var(--text); 
   padding: 1rem 1rem; 
   border: 2px solid var(--text); 
-  font-weight: bold;
   border-radius: var(--rounded);
 }
-
+.container-global {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.box {
+  width: 30%;
+  /* float: left; */
+  margin: 10px;
+  height: auto;
+  flex-wrap: wrap;
+  color: var(--text);
+  position: relative;
+  background-color: none;
+  border: 2px solid white;
+  padding: 40px 15px 10px 10px;
+  border-radius: var(--rounded);
+}
+.title-box {
+  top: 0;
+  left: 0;
+  width: 30%;
+  padding: 5px 15px;
+  position: absolute;
+  text-align: center;
+  align-content: center;
+}
+.html {
+  color: var(--text);
+  font-weight: bold;
+}
+.css {
+  color: var(--text);
+  font-weight: bold;
+}
+.js {
+  color: var(--text);
+  font-weight: bold;
+}
 /* MEDIA QUERIES  */
 
 @media screen and (max-width: 805px) {
 
   .list {
-    top: 5.5rem;
     left: 100%;
     width: 90%;
+    top: 5.5rem;
     height: 100vh;
     display: flex;
     position: fixed;
@@ -146,12 +180,19 @@ html{
     display: block;
     margin-top: 2rem;
     background: none;
+    color: var(--text);
     padding: 1rem 3rem;
     border: var(--text) solid;
-    color: var(--text);
     border-radius: var(--rounded);
   }
-
+  .container-global {
+      flex-flow: column;
+      align-items: center;
+    }
+    .col-sm {
+      width: 75%;
+      margin: 30px auto;
+    }
   #check {
     display: none;
   }
