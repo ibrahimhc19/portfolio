@@ -198,7 +198,7 @@ html{
   .greetingBox{
       width: 75%;
       padding-bottom: 2rem;
-      margin: 50% auto 33%;
+      margin: 50% auto 40%;
       border-bottom: var(--text) solid 2px;
       position: relative;
     }
