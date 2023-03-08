@@ -195,6 +195,13 @@ html{
       width: 75%;
       margin: 30px auto;
     }
+  .greetingBox{
+      width: 75%;
+      padding-bottom: 2rem;
+      margin: 50% auto 33%;
+      border-bottom: var(--text) solid 2px;
+      position: relative;
+    }
   #check {
     display: none;
   }
