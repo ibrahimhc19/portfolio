@@ -82,9 +82,9 @@ html{
   display: none;
 }
 .greetingBox{
-  width: 75%;
-  padding-bottom: 2rem;
-  margin: 10rem auto 1rem;
+  width: 60%;
+  padding-bottom: 5rem;
+  margin: 15% auto 30%;
   border-bottom: var(--text) solid 2px;
   position: relative;
 }
@@ -196,11 +196,11 @@ html{
       margin: 30px auto;
     }
   .greetingBox{
-      width: 75%;
-      padding-bottom: 2rem;
-      margin: 50% auto 40%;
-      border-bottom: var(--text) solid 2px;
-      position: relative;
+    width: 60%;
+    padding-bottom: 6rem;
+    margin: 30% auto 40%;
+    border-bottom: var(--text) solid 2px;
+    position: relative;
     }
   #check {
     display: none;
