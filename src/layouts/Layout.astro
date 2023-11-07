@@ -1,43 +1,55 @@
 ---
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 ---
 
 <!doctype html>
-
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Ibrahim Calzadilla" />
+    <meta
+      name="description"
+      content="Ibrahim Calzadilla's Frontend Development Portfolio"
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript, React" />
+    <meta name="theme-color" content="#f1b6e0" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.png" />
+    <title>{title}</title>
+  </head>
 
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" href="/favicon.png" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-
-	<body>
-
-		<slot />
-		
-	</body>
-
+  <body>
+    <slot />
+  </body>
 </html>
 
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
+  @import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap");
 
+  * {
+    list-style: none;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    color: black;
+  }
+  :root {
+    --border: 1rem;
+    --mb-elements: 1vh;
+    --bgc-elements: #ffffff;
+    --shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.205);
+  }
+  body {
+    margin: 0 auto;
+    max-width: 614.4px;
+    justify-content: center;
+    background: linear-gradient(217deg, #f1b6e0, rgba(255, 0, 0, 0) 70.71%),
+      linear-gradient(127deg, #b3b0f8, rgba(0, 255, 0, 0) 70.71%),
+      linear-gradient(336deg, #8addf8, rgba(0, 0, 255, 0) 70.71%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 </style>

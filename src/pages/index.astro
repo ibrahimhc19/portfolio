@@ -1,13 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import ProfileCard from '../components/ProfileCard.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Ibrahim Calzadilla | Frontend Developer">
 	<main>
-		
+		<Navbar/>
+			<ProfileCard/>
 	</main>
 </Layout>
 
 <style>
-	
+	main{
+		justify-content: center;
+		display: flex;
+	}
 </style>
